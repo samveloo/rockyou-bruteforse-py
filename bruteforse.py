@@ -2,7 +2,7 @@ import os
 import time
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DICTIONARY_FILE = os.path.abspath(os.path.join(BASE_DIR, "..", "..", "rockyou.txt"))
+DICTIONARY_FILE = os.path.abspath(os.path.join(BASE_DIR, "..", "..", "..", "Документы", "rockyou.txt"))
 
 if not os.path.exists(DICTIONARY_FILE):
     print(f"[ERROR] Dictionary file not found at: {DICTIONARY_FILE}")
@@ -30,7 +30,7 @@ with open(DICTIONARY_FILE, "r", encoding="utf-8", errors="ignore") as file:
             print("\n" + "="*40)
             print(f"Password cracked: {guess}")
             print(f"Dictionary position: #{count}")
-            print(f"Time elapsed: {round(end_time - start_time, 2)} seconds")
+            print(f"Time elapsed: {round(end_time - start_time, 5)} seconds")
             print("="*40)
             found = True
             break
