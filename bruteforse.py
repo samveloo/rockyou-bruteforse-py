@@ -30,7 +30,7 @@ with open(DICTIONARY_FILE, "r", encoding="utf-8", errors="ignore") as file:
             print("\n" + "="*40)
             print(f"Password cracked: {guess}")
             print(f"Dictionary position: #{count}")
-            print(f"Time elapsed: {round(end_time - start_time, 5)} seconds")
+            print(f"Time elapsed: {round(end_time - start_time, 8)} seconds")
             print("="*40)
             found = True
             break
